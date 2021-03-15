@@ -1,6 +1,6 @@
 # Page settings
 baseurl = "https://libreweb.org"
-title = "LibreWeb"
+title = "LibreWeb - Decentralized Internet"
 languageCode = "en"
 theme = "libreweb"
 disableHugoGeneratorInject = true
