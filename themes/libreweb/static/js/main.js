@@ -1,23 +1,6 @@
 ; (function () {
     'use strict';
 
-    // iPad and iPod detection	
-    var isiPad = function () {
-        return (navigator.platform.indexOf("iPad") != -1);
-    };
-
-    var isiPhone = function () {
-        return (
-            (navigator.platform.indexOf("iPhone") != -1) ||
-            (navigator.platform.indexOf("iPod") != -1)
-        );
-    };
-
-    // Parallax
-    var parallax = function () {
-        $(window).stellar();
-    };
-
     // Burger Menu
     var burgerMenu = function () {
         $('body').on('click', '.js-fh5co-nav-toggle', function (event) {
@@ -125,14 +108,77 @@
         });
     };
 
+    var insertMailTo = function () {
+        const mailto = document.getElementById("mailto");
+        const coded = "X4oJ@YXNMDfDN.JMc";
+        const key = "qJdLieE0gyY9wrTZH6IGQXDsjcn8mfM5uk7vaA3Whx14bBozSFCVpRtlPO2UKN";
+        const shift = coded.length;
+        var link = "", ltr;
+        for (var i = 0; i < coded.length; i++) {
+            if (key.indexOf(coded.charAt(i)) == -1) {
+                ltr = coded.charAt(i);
+                link += (ltr);
+            }
+            else {
+                ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length;
+                link += (key.charAt(ltr));
+            }
+        }
+        mailto.href = "mailto:" + link;
+    };
+
+    var countersAnimate = function () {
+        var counters = $('#fh5co-counters');
+        if (counters.length > 0) {
+            counters.waypoint(function (direction) {
+                if (direction === 'down' && !$(this.element).hasClass('animated')) {
+                    var sec = counters.find('.to-animate').length,
+                        sec = parseInt((sec * 200) + 400);
+                    setTimeout(function () {
+                        counters.find('.to-animate').each(function (k) {
+                            var el = $(this);
+                            setTimeout(function () {
+                                el.addClass('fadeInUp animated');
+                            }, k * 200, 'easeInOutExpo');
+
+                        });
+                    }, 200);
+
+                    setTimeout(function () {
+                        counters.find('.js-counter').countTo({
+                            formatter: function (value, options) {
+                                return value.toFixed(options.decimals);
+                            },
+                        });
+                    }, 400);
+
+                    setTimeout(function () {
+                        counters.find('.to-animate-2').each(function (k) {
+                            var el = $(this);
+                            setTimeout(function () {
+                                el.addClass('bounceIn animated');
+                            }, k * 200, 'easeInOutExpo');
+                        });
+                    }, sec);
+                    $(this.element).addClass('animated');
+                }
+            }, { offset: '80%' });
+
+        }
+    };
+
+
     // Document on load.
     $(function () {
-        parallax();
         burgerMenu();
         clickMenu();
         buttonLinks();
         windowScroll();
         navigationSection();
         goToTop();
+        insertMailTo();
+
+        // Animate counters
+        countersAnimate();
     });
 }());

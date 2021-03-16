@@ -12,8 +12,8 @@
 			</div>
 			<div class="row">
 			{{ range .Site.Params.features.item }}
-				<div class="col-md-6 col-sm-6 fh5co-service">
-					<i class="fa fa-5x {{ .icon | markdownify }} " aria-hidden="true"></i>
+				<div class="col-md-6 col-sm-6 fh5co-feature">
+					<i class="fa fa-5x icon {{ .icon | markdownify }} " aria-hidden="true"></i>
 					<h3>{{ .title | markdownify }}</h3>
 					<p>{{ .description | markdownify }}</p>
 				</div>

@@ -670,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   margin-bottom: -35px;
 }
-#fh5co-features .fh5co-service {
+#fh5co-features .fh5co-feature {
   padding-right: 30px;
 }
 #fh5co-features h3 {
@@ -687,6 +687,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-features .icon:before {
   color: #fff;
+}
+#fh5co-features .section-heading {
+  margin-bottom: 20px;
 }
 #fh5co-features .section-heading h2 {
   color: #fff;
@@ -1054,7 +1057,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-contact .section-heading {
-  margin-bottom:  0;
+  margin-bottom: 0;
 }
 
 .section-heading {

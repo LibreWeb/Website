@@ -37,7 +37,7 @@
                     {{ end }}
 
                     {{ range .Site.Menus.postpend }}
-                        <li><a class="external" href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
+                        <li><a class="external" href="{{ .URL }}" target="_blank"><span>{{ .Name | markdownify }} <i class="fa fa-external-link" style="font-size: 1.2rem; vertical-align:top" aria-hidden="true"></i></span></a></li>
                     {{ end }}
                 </ul>
             </div>

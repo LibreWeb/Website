@@ -10,10 +10,8 @@ $(document).ready(function() {
 			},
 			zoom: {
 				enabled: true, // By default it's false, so don't forget to enable it
-
 				duration: 300, // duration of the effect, in milliseconds
 				easing: 'ease-in-out', // CSS transition easing function
-
 				// The "opener" function should return the element from which popup will be zoomed in
 				// and to which popup will be scaled down
 				// By defailt it looks for an image tag:
@@ -33,16 +31,11 @@ $(document).ready(function() {
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
-
         fixedContentPos: false
     });
 	};
 
-	
-
-
 	// Call the functions 
 	magnifPopup();
 	magnifVideo();
-
 });

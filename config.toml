@@ -10,8 +10,7 @@ disableHugoGeneratorInject = true
     [markup.goldmark.renderer]
       unsafe = true
 
-[params]
-  
+[params]  
   #custom_css = ["css/custom1.css", "css/custom2.css"]
 
   # Meta
@@ -40,10 +39,10 @@ disableHugoGeneratorInject = true
     #  weight = 10
 
     # postpended links
-    #[[menu.postpend]]
-    #  url = "http://gohugo.io"
-    #  name = "External link"
-    #  weight = 10
+    [[menu.postpend]]
+      url = "https://libreweb.org/docs"
+      name = "Docs"
+      weight = 10
   
   # Hero section
   [params.hero]
@@ -54,32 +53,32 @@ disableHugoGeneratorInject = true
   # Available icons: http://simplelineicons.com/
   [params.intro]
 
-  [[params.intro.item]]
-    title = "Plan"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    url = "#"
-    button = "Get In Touch"
-    icon = "icon-bulb"
-    img = "img_7.jpg"
+  #[[params.intro.item]]
+  #  title = "Plan"
+  #  description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+  #  url = "#"
+  #  button = "Get In Touch"
+  #  icon = "icon-bulb"
+  #  img = "img_7.jpg"
 
-  [[params.intro.item]]
-    title = "Develop"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    url = "#"
-    button = "Click Me"
-    icon = "icon-wrench"
-    img = "img_8.jpg"
+  #[[params.intro.item]]
+  #  title = "Develop"
+  #  description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+  #  url = "#"
+  #  button = "Click Me"
+  #  icon = "icon-wrench"
+  #  img = "img_8.jpg"
 
-  [[params.intro.item]]
-    title = "Launch"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    url = "#"
-    button = "Why us?"
-    icon = "icon-rocket"
-    img = "img_10.jpg"
+  #[[params.intro.item]]
+  #  title = "Launch"
+  #  description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+  #  url = "#"
+  #  button = "Why us?"
+  #  icon = "icon-rocket"
+  #  img = "img_10.jpg"
 
   [params.intro.video]
-    enable = true
+    enable = false
     title = "Watch the video"
     icon = "fa-play-circle"
     url = "https://vimeo.com/channels/staffpicks/93951774"
@@ -241,7 +240,7 @@ disableHugoGeneratorInject = true
     enable = true
     form = true
     title = "Get in touch"
-    description = ""
+    description = 'Join us on <a href="https://matrix.to/#/#libreweb:melroy.org?via=melroy.org" target="_blank">Matrix</a> or by <a id="mailto">e-mail</a> or contact me via the form below.'
  
     name = "Melroy van den Berg"
     email = "info@libreweb.org"
@@ -263,3 +262,8 @@ disableHugoGeneratorInject = true
         ["fa-reddit", "https://www.reddit.com/r/libreweb"],
         ["fa-youtube", "https://www.youtube.com/channel/UC1wZpYca2iu4pJ3bhZ3azcw"]
       ]
+
+ignoreFiles = [
+    "themes/libreweb/README.md",
+    "themes/libreweb/LICENSE.md"
+]
