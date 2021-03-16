@@ -25,7 +25,7 @@
 						<p>{{ .description | markdownify }}</p>
 						<ul class="social social-circle">
 						{{ range .social }}
-							<li><a href="{{ index . 1 }}" target="_blank"><i class="{{ index .  0 }}"></i></a></li>
+							<li><a href="{{ index . 1 }}" target="_blank"><i class="fa {{ index .  0 }}" aria-hidden="true"></i></a></li>
 						{{ end }}
 						</ul>
 					</div>

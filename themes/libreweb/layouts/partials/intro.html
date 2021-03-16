@@ -21,7 +21,7 @@
 				<!-- <span>{{ with .Site.Params.intro.video }}{{ . }}{{ end }}</span> -->
 				<span>{{.Site.Params.intro.video.title | markdownify }}</span>
 
-				<a href="{{ .Site.Params.intro.video.url }}" class="popup-vimeo btn-video"><i class="{{ .Site.Params.intro.video.icon | markdownify }}"></i></a>
+				<a href="{{ .Site.Params.intro.video.url }}" class="popup-vimeo btn-video"><i class="fa {{ .Site.Params.intro.video.icon | markdownify }}" aria-hidden="true"></i></a>
 			</div>
 			{{ end }}
 		</div>

@@ -81,7 +81,7 @@ disableHugoGeneratorInject = true
   [params.intro.video]
     enable = true
     title = "Watch the video"
-    icon = "icon-play2"
+    icon = "fa-play-circle"
     url = "https://vimeo.com/channels/staffpicks/93951774"
 
   # Work section
@@ -159,23 +159,24 @@ disableHugoGeneratorInject = true
 
     # Decentralized, no blockchain, no single point of failure, fast, no censorship
     [[params.features.item]]
-      title = "Brand &amp; Strategy"
+      title = "No Censorship"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-anchor"
+      icon = "fa-eye-slash"
 
     [[params.features.item]]
-      title = "Web &amp; Interface"
+      title = "Decentralized"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-layers2"
+      icon = "fa-hubzilla"
+
     [[params.features.item]]
-      title = "Photo &amp; Video"
+      title = "Fast"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-video2"
+      icon = "fa-clock-o"
 
       [[params.features.item]]
-      title = "CMS &amp; eCommerce"
+      title = "Open-Source"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
-      icon = "icon-monitor"
+      icon = "fa-microphone"
 
   # About section
   [params.about]
@@ -190,11 +191,11 @@ disableHugoGeneratorInject = true
       description = "I got inspired to create a decentralized web.\n\nLibreWeb Browser is an answer to a world which gets more and more centralized, monetized and censored by companies (big tech) and governments."
       img = "melroy.jpg"
       alt = "Melroy van den Berg"
-      # Gitlab: https://gitlab.melroy.org/libreweb/browser
       social = [
-        ["icon-twitter", "https://twitter.com/LibreWebOrg"],
-        ["icon-github", "https://github.com/LibreWeb/Browser"],
-        ["icon-facebook", "https://www.facebook.com/LibreWeb.org"]
+        ["fa-matrix-org", "https://matrix.to/#/#libreweb:melroy.org?via=melroy.org"],
+        ["fa-twitter", "https://twitter.com/LibreWebOrg"],
+        ["fa-facebook", "https://www.facebook.com/LibreWeb.org"],
+        ["fa-gitlab", "https://gitlab.melroy.org/libreweb/browser"]
       ]
 
   # Counters section
@@ -205,7 +206,7 @@ disableHugoGeneratorInject = true
 
     [[params.counters.item]]
       description = "Finished projects"
-      icon = "icon-briefcase"
+      icon = "fa-briefcase"
       from = 0
       to = 89
       interval = 50
@@ -213,7 +214,7 @@ disableHugoGeneratorInject = true
 
     [[params.counters.item]]
       description = "Lines of code"
-      icon = "icon-code"
+      icon = "fa-code"
       from = 0
       to = 2343409
       interval = 50
@@ -221,7 +222,7 @@ disableHugoGeneratorInject = true
 
     [[params.counters.item]]
       description = "Cups of coffee"
-      icon = "icon-cup"
+      icon = "fa-coffee"
       from = 0
       to = 1302
       interval = 50
@@ -229,7 +230,7 @@ disableHugoGeneratorInject = true
 
     [[params.counters.item]]
       description = "Happy clients"
-      icon = "icon-people"
+      icon = "fa-users"
       from = 0
       to = 52
       interval = 50
@@ -251,12 +252,14 @@ disableHugoGeneratorInject = true
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; LibreWeb, developed by Melroy van den Berg, content licensed <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>.'
-    # GitLab ...
+    copyright = '&copy; LibreWeb, developed by Melroy van den Berg, content licensed by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><i class="fa fa-cc" aria-hidden="true"></i> 3.0</a>.'
     links = [
-        ["icon-github", "https://github.com/LibreWeb/Browser"],
-        ["icon-twitter", "https://twitter.com/LibreWebOrg"],
-        ["icon-facebook", "https://www.facebook.com/LibreWeb.org"],
-        ["icon-reddit", "https://www.reddit.com/r/libreweb"],
-        ["icon-youtube", "https://www.youtube.com/channel/UC1wZpYca2iu4pJ3bhZ3azcw"]
+        ["fa-gitlab", "https://gitlab.melroy.org/libreweb/browser"],
+        ["fa-github", "https://github.com/LibreWeb/Browser"],
+        ["fa-telegram", "https://t.me/libreweb"],
+        ["fa-matrix-org", "https://matrix.to/#/#libreweb:melroy.org?via=melroy.org"],
+        ["fa-twitter", "https://twitter.com/LibreWebOrg"],
+        ["fa-facebook", "https://www.facebook.com/LibreWeb.org"],
+        ["fa-reddit", "https://www.reddit.com/r/libreweb"],
+        ["fa-youtube", "https://www.youtube.com/channel/UC1wZpYca2iu4pJ3bhZ3azcw"]
       ]
