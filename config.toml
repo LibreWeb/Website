@@ -160,22 +160,22 @@ disableHugoGeneratorInject = true
     # Decentralized, no blockchain, no single point of failure, fast, no censorship
     [[params.features.item]]
       title = "No Censorship"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      description = "Unable to censor by governments due to the decentralized nature.<br/>Also <b>no</b> telemetry, adware or tracking."
       icon = "fa-eye-slash"
 
     [[params.features.item]]
       title = "Decentralized"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      description = "Fully decentralized by using the InterPlanetary File System (IPFS) protocol. Meaning no single-point-of-failure, content gets distributed across nodes. No way to block or censor the web anymore."
       icon = "fa-hubzilla"
 
     [[params.features.item]]
-      title = "Fast"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      title = "Fast & Easy"
+      description = "Very fast Web Browser, using Markdown format as the source-code of the content. Content is king."
       icon = "fa-clock-o"
 
       [[params.features.item]]
       title = "Open-Source"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
+      description = "Fully open-source, free software and licensed under MIT license."
       icon = "fa-microphone"
 
   # About section
