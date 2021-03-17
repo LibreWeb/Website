@@ -1,19 +1,32 @@
-	<footer id="footer" role="contentinfo">
-		<a href="#" class="gotop js-gotop"><i class="fa fa-angle-double-up"></i></a>
-		<div class="container">
-			<div>
-				<div class="col-md-12 text-center">
-					<p>{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<ul class="social social-circle">
-					{{ range .Site.Params.footer.links }}
-						<li><a href="{{ with index . 1}}{{ . }}{{ end }}" target="_blank"><i class="fa {{ with index . 0}}{{ . }}{{ end }}" aria-hidden="true"></i></a></li>
-					{{ end }}
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+    <footer id="footer" role="contentinfo">
+        <a href="#" class="gotop js-gotop"><i class="fa fa-angle-double-up"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 links">
+                    <h5>LibreWeb</h5>
+                    {{ range .Site.Params.footer.links }}
+                    <a href="{{ .url }}"><span>{{ .name | markdownify }}</span></a>
+                    {{ end }}
+                </div>
+                <div class="col-md-3 links">
+                    <h5>Info</h5>
+                    {{ range .Site.Params.footer.info_links }}
+                    <a href="{{ .url }}"><span>{{ .name | markdownify }}</span></a>
+                    {{ end }}
+                </div>
+                <div class="col-md-6 text-center">
+                    <ul class="social social-circle">
+                        {{ range .Site.Params.footer.social }}
+                        <li><a href="{{ with index . 1}}{{ . }}{{ end }}" target="_blank"><i
+                                    class="fa {{ with index . 0}}{{ . }}{{ end }}" aria-hidden="true"></i></a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center copyright">
+                    <p>{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
+                </div>
+            </div>
+        </div>
+    </footer>

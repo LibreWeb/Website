@@ -43,6 +43,11 @@ disableHugoGeneratorInject = true
       url = "https://libreweb.org/docs"
       name = "Docs"
       weight = 10
+
+    [[menu.postpend]]
+      url = "https://gitlab.melroy.org/libreweb/browser/-/releases"
+      name = "Download"
+      weight = 10
   
   # Hero section
   [params.hero]
@@ -164,7 +169,7 @@ disableHugoGeneratorInject = true
 
     [[params.features.item]]
       title = "Decentralized"
-      description = "Fully decentralized by using the InterPlanetary File System (IPFS) protocol. Meaning no single-point-of-failure, content gets distributed across nodes. No way to block or censor the web anymore."
+      description = "Fully decentralized by using the InterPlanetary File System (IPFS) protocol. Meaning no single-point-of-failure, content gets distributed across nodes.<br/>All the benefits of IPFS and more."
       icon = "fa-hubzilla"
 
     [[params.features.item]]
@@ -252,7 +257,7 @@ disableHugoGeneratorInject = true
   [params.footer]
     enable = true
     copyright = '&copy; LibreWeb, developed by Melroy van den Berg, content licensed by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><i class="fa fa-cc" aria-hidden="true"></i> 3.0</a>.'
-    links = [
+    social = [
         ["fa-gitlab", "https://gitlab.melroy.org/libreweb/browser"],
         ["fa-github", "https://github.com/LibreWeb/Browser"],
         ["fa-telegram", "https://t.me/libreweb"],
@@ -262,6 +267,35 @@ disableHugoGeneratorInject = true
         ["fa-reddit", "https://www.reddit.com/r/libreweb"],
         ["fa-youtube", "https://www.youtube.com/channel/UC1wZpYca2iu4pJ3bhZ3azcw"]
       ]
+
+    # Links in footer
+    [[params.footer.links]]
+      url = "https://gitlab.melroy.org/libreweb/browser/-/releases"
+      name = "Download"
+
+    [[params.footer.links]]
+      url = "https://libreweb.org/docs"
+      name = "Docs"
+
+    [[params.footer.links]]
+      url = "https://gitlab.melroy.org/libreweb/browser"
+      name = "GitLab"
+
+    [[params.footer.info_links]]
+      url = "https://libreweb.org/docs/community"
+      name = "Community"
+
+    [[params.footer.info_links]]
+      url = "https://libreweb.org/docs/FAQ"
+      name = "FAQ"
+
+    [[params.footer.info_links]]
+      url = "https://blog.libreweb.org"
+      name = "Blog"
+
+    [[params.footer.info_links]]
+      url = "#fh5co-contact"
+      name = "Contact"
 
 ignoreFiles = [
     "themes/libreweb/README.md",
