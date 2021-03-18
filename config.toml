@@ -40,7 +40,7 @@ disableHugoGeneratorInject = true
 
     # postpended links
     [[menu.postpend]]
-      url = "https://libreweb.org/docs"
+      url = "https://docs.libreweb.org"
       name = "Docs"
       weight = 10
 
@@ -274,7 +274,7 @@ disableHugoGeneratorInject = true
       name = "Download"
 
     [[params.footer.links]]
-      url = "https://libreweb.org/docs"
+      url = "https://docs.libreweb.org"
       name = "Docs"
 
     [[params.footer.links]]
@@ -282,11 +282,11 @@ disableHugoGeneratorInject = true
       name = "GitLab"
 
     [[params.footer.info_links]]
-      url = "https://libreweb.org/docs/community"
+      url = "https://docs.libreweb.org/community"
       name = "Community"
 
     [[params.footer.info_links]]
-      url = "https://libreweb.org/docs/FAQ"
+      url = "https://docs.libreweb.org/FAQ"
       name = "FAQ"
 
     [[params.footer.info_links]]
