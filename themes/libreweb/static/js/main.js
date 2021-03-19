@@ -127,6 +127,21 @@
         mailto.href = "mailto:" + link;
     };
 
+    var contactMessages = function () {
+        // Display messages.
+        if (location.search.substring(1) !== '') {
+            switch (location.search.substring(1)) {
+                case 'submitted':
+                    $('.contact-submitted').removeClass('hidden');
+                    break;
+
+                case 'error':
+                    $('.contact-error').removeClass('hidden');
+                    break;
+            }
+        }
+    };
+
     var countersAnimate = function () {
         var counters = $('#fh5co-counters');
         if (counters.length > 0) {
@@ -176,7 +191,8 @@
         navigationSection();
         goToTop();
         insertMailTo();
-        
+        contactMessages();
+
         // Animate counters
         countersAnimate();
     });

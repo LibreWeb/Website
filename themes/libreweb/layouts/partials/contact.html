@@ -14,6 +14,10 @@
 			<div class="row row-bottom-padded-md">
 				{{ if .Site.Params.contact.form }}
 				<div class="col-md-12 ">
+                    
+                    <p class="contact-submitted status message hidden">Contact form is send</p>
+                    <p class="contact-error error message hidden">Something went wrong during sending.</p>
+
 					<form method="post" action="/php/contact.php" accept-charset="UTF-8">
 					<div class="form-group ">
 						{{ with .Site.Params.contact.name }}
@@ -30,7 +34,6 @@
 					<div class="form-group ">
 						{{ with .Site.Params.contact.subject }}
 						<label for="subject" class="sr-only">{{ . | markdownify }}</label>
-                        <input type="text" id="url" name="url" placeholder="URL" style="visibility: hidden;">
 						<input id="subject" class="form-control" name="subject" placeholder="{{ . }}" type="text" tabindex="3">
 						{{ end }}
 					</div>
@@ -39,6 +42,7 @@
 						<label for="message" class="sr-only">{{ . | markdownify }}</label>
 						<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="{{ . }}" tabindex="4" required></textarea>
 						{{ end }}
+                        <input type="text" id="url" name="url" placeholder="URL" class="hidden">
 					</div>
 					<div class="form-group ">
 						<input class="btn btn-primary btn-lg" name="submit" value="{{ .Site.Params.contact.button | markdownify }}" type="submit">
