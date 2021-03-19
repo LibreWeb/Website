@@ -16,7 +16,7 @@
 				<div class="col-md-12 ">
                     
                     {{ with .Site.Params.contact.successful }}<p class="contact-submitted alert alert-success hidden">{{ . | markdownify }}</p>{{ end }}
-                    {{ with .Site.Params.contact.error }}<p class="contact-error alert alert-danger hidden">{{ . | markdownify }}</p>>{{ end }}
+                    {{ with .Site.Params.contact.error }}<p class="contact-error alert alert-danger hidden">{{ . | markdownify }}</p>{{ end }}
 
 					<form method="post" action="/php/contact.php" accept-charset="UTF-8">
 					<div class="form-group ">
