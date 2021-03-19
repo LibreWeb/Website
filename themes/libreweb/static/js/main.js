@@ -167,7 +167,6 @@
         }
     };
 
-
     // Document on load.
     $(function () {
         burgerMenu();
@@ -177,7 +176,7 @@
         navigationSection();
         goToTop();
         insertMailTo();
-
+        
         // Animate counters
         countersAnimate();
     });

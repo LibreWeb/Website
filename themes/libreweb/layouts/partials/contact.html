@@ -14,33 +14,34 @@
 			<div class="row row-bottom-padded-md">
 				{{ if .Site.Params.contact.form }}
 				<div class="col-md-12 ">
-					<form method="post" action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}">
+					<form method="post" action="/php/contact.php" accept-charset="UTF-8">
 					<div class="form-group ">
 						{{ with .Site.Params.contact.name }}
 						<label for="name" class="sr-only">{{ . | markdownify }}</label>
-						<input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+						<input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text" tabindex="1" required>
 						{{ end }}
 					</div>
 					<div class="form-group ">
 						{{ with .Site.Params.contact.email }}
 						<label for="email" class="sr-only">{{ . | markdownify }}</label>
-						<input id="email" class="form-control" name="_replyto" placeholder="{{ . }}" type="email">
+						<input id="email" class="form-control" name="email" placeholder="{{ . }}" type="email" tabindex="2" required>
 						{{ end }}
 					</div>
 					<div class="form-group ">
-						{{ with .Site.Params.contact.phone }}
-						<label for="phone" class="sr-only">{{ . | markdownify }}</label>
-						<input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="text">
+						{{ with .Site.Params.contact.subject }}
+						<label for="subject" class="sr-only">{{ . | markdownify }}</label>
+                        <input type="text" id="url" name="url" placeholder="URL" style="visibility: hidden;">
+						<input id="subject" class="form-control" name="subject" placeholder="{{ . }}" type="text" tabindex="3">
 						{{ end }}
 					</div>
 					<div class="form-group ">
 						{{ with .Site.Params.contact.message }}
 						<label for="message" class="sr-only">{{ . | markdownify }}</label>
-						<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="{{ . }}"></textarea>
+						<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="{{ . }}" tabindex="4" required></textarea>
 						{{ end }}
 					</div>
 					<div class="form-group ">
-						<input class="btn btn-primary btn-lg" value="{{ .Site.Params.contact.button | markdownify }}" type="submit">
+						<input class="btn btn-primary btn-lg" name="submit" value="{{ .Site.Params.contact.button | markdownify }}" type="submit">
 					</div>
 					</form>
 				</div>
