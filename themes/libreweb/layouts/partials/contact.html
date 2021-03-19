@@ -15,8 +15,8 @@
 				{{ if .Site.Params.contact.form }}
 				<div class="col-md-12 ">
                     
-                    <p class="contact-submitted status message hidden">Contact form is send</p>
-                    <p class="contact-error error message hidden">Something went wrong during sending.</p>
+                    {{ with .Site.Params.contact.successful }}<p class="contact-submitted alert alert-success hidden">{{ . | markdownify }}</p>{{ end }}
+                    {{ with .Site.Params.contact.error }}<p class="contact-error alert alert-danger hidden">{{ . | markdownify }}</p>>{{ end }}
 
 					<form method="post" action="/php/contact.php" accept-charset="UTF-8">
 					<div class="form-group ">

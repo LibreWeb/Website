@@ -252,6 +252,9 @@ disableHugoGeneratorInject = true
     subject = "Subject"
     message = "Message"
     button = "Send message"
+    
+    successful = "Thank you! Form is successfully send, if needed we will reply as soon as possible."
+    error = "Something went wrong during submitting the form."
 
   # Footer section
   [params.footer]
