@@ -1,26 +1,25 @@
 stages:
   - build
- # - deploy
+  - deploy
 
 build:
   stage: build
   image: registry.gitlab.com/pages/hugo:latest
   script:
-    - hugo
+    - hugo --minify
   artifacts:
     paths:
       - public
   
-#deploy:
-#  stage: deploy
-#  image: alpine:latest
-#  before_script:
-#    - apk add --update --no-cache rsync openssh-client
-#    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
-#    - echo ${SSH_PRIVATE_KEY} | base64 -d > ~/.ssh/id_rsa
-#    - chmod 600 ~/.ssh/id_rsa
-#    - ssh-keyscan -t rsa ${DO_HOST} >> ~/.ssh/known_hosts
-#  script:
-#    - rsync -az --delete public/ ${DO_USER}@${DO_HOST}:${DO_PATH}
-#  only:
-#    - master
+deploy:
+  stage: deploy
+  image: instrumentisto/rsync-ssh:latest
+  before_script:
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | ssh-add -
+    - echo "${SSH_HOST_KEY}" > ~/.ssh/known_hosts
+  script:
+    - rsync -azhv --delete public/ "${SSH_USER_HOST_LOCATION}"
+  only:
+    - master
