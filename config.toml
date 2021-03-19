@@ -169,7 +169,7 @@ disableHugoGeneratorInject = true
 
     [[params.features.item]]
       title = "Decentralized"
-      description = "Fully decentralized by using the InterPlanetary File System (IPFS) protocol. Meaning no single-point-of-failure, content gets distributed across nodes.<br/>All the benefits of IPFS and more."
+      description = "Fully decentralized by using the <a target="_blank" href="https://ipfs.io/">InterPlanetary File System (IPFS)</a> protocol. Meaning no single-point-of-failure, content gets distributed across nodes.<br/>All the benefits of IPFS and more."
       icon = "fa-hubzilla"
 
     [[params.features.item]]
