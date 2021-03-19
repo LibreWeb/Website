@@ -289,12 +289,13 @@ disableHugoGeneratorInject = true
       name = "Community"
 
     [[params.footer.info_links]]
-      url = "https://docs.libreweb.org/FAQ"
+      url = "https://docs.libreweb.org/faq"
       name = "FAQ"
 
-    [[params.footer.info_links]]
-      url = "https://blog.libreweb.org"
-      name = "Blog"
+# Blog still todo
+#    [[params.footer.info_links]]
+#      url = "https://blog.libreweb.org"
+#      name = "Blog"
 
     [[params.footer.info_links]]
       url = "#fh5co-contact"
