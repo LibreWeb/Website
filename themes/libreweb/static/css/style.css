@@ -736,6 +736,9 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-features .section-heading h2.left-border:after {
   background: rgba(255, 255, 255, 0.3);
 }
+#fh5co-features a {
+    color: #fff;
+}
 
 #fh5co-counters {
   background: #52d3aa;
