@@ -174,7 +174,7 @@ disableHugoGeneratorInject = true
 
     [[params.features.item]]
       title = "Fast & Easy"
-      description = "Very fast Web Browser, using Markdown format as the source-code of the content. Content is king."
+      description = "Very fast Web Browser, using Markdown syntax as the source-code of the content. Allowing fast & secure rendering. Content is king."
       icon = "fa-clock-o"
 
       [[params.features.item]]
@@ -259,7 +259,7 @@ disableHugoGeneratorInject = true
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; LibreWeb, developed by Melroy van den Berg, content licensed by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><i class="fa fa-cc" aria-hidden="true"></i> 3.0</a>.'
+    copyright = '&copy; LibreWeb, developed by Melroy van den Berg, content licensed by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><i class="fa fa-cc" aria-hidden="true"></i>&nbsp;3.0</a>.'
     social = [
         ["fa-gitlab", "https://gitlab.melroy.org/libreweb/browser"],
         ["fa-github", "https://github.com/LibreWeb/Browser"],
