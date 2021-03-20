@@ -19,11 +19,6 @@
                     <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home
                                 }}{{ . | markdownify }}{{ end }}</span></a></li>
 
-                    {{ if .Site.Params.work.enable }}
-                    <li><a href="#" data-nav-section="work"><span>{{ with .Site.Params.navigation.work }}{{ . |
-                                markdownify }}{{ end }}</span></a></li>
-                    {{ end }}
-
                     {{ if .Site.Params.testimonials.enable }}
                     <li><a href="#" data-nav-section="testimonials"><span>{{ with .Site.Params.navigation.testimonials
                                 }}{{ . | markdownify }}{{ end }}</span></a></li>
@@ -36,6 +31,11 @@
 
                     {{ if .Site.Params.about.enable }}
                     <li><a href="#" data-nav-section="about"><span>{{ with .Site.Params.navigation.about }}{{ . |
+                                markdownify }}{{ end }}</span></a></li>
+                    {{ end }}
+
+                    {{ if .Site.Params.help.enable }}
+                    <li><a href="#" data-nav-section="help"><span>{{ with .Site.Params.navigation.help }}{{ . |
                                 markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 

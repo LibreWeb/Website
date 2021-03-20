@@ -23,10 +23,9 @@ disableHugoGeneratorInject = true
   [params.navigation]
     brand = "LibreWeb"
     home = "Home"
-    work = "Work"
-    testimonials = "Testimonials"
     features = "Features"
     about = "About"
+    help = "Help"
     contact = "Contact"
 
     # You can add custom links before or after the default links
@@ -177,7 +176,7 @@ disableHugoGeneratorInject = true
       description = "Very fast Web Browser, using Markdown syntax as the source-code of the content. Allowing fast & secure rendering. Content is king."
       icon = "fa-clock-o"
 
-      [[params.features.item]]
+    [[params.features.item]]
       title = "Open-Source"
       description = "Fully open-source, free software and licensed under MIT license."
       icon = "fa-microphone"
@@ -240,6 +239,23 @@ disableHugoGeneratorInject = true
       interval = 50
       speed = 5000
 
+  # Help section
+  [params.help]
+    enable = true
+    title = "Getting help"
+    description = "If you are looking for help or support,<br/>here is a list to help you get started:"
+
+    [[params.help.items]]
+      content = '<b>Documentation:</b> Clear and dedicated <a href="https://docs.libreweb.org" target="_blank">documentation site</a> about the project, FAQ and more.'
+    #[[params.help.items]]
+    #  content = '<b>Technical support:</b> Reach out to our official LibreWeb forums.'
+    [[params.help.items]]
+      content = '<b>General questions & discussions:</b> Use <a href="https://matrix.to/#/#libreweb:melroy.org?via=melroy.org" target="_blank">Matrix</a> or <a href="https://t.me/libreweb" target="_blank">Telegram</a>.'
+    [[params.help.items]]
+      content = '<b>Bugs and feature proposals:</b> Submit an issue on the <a href="https://gitlab.melroy.org/libreweb/browser/-/issues" target="_blank">GitLab LibreWeb Browser</a> repository.'
+    [[params.help.items]]
+      content = '<b>Contribute:</b> Do you like to contribute? Read the <a href="https://docs.libreweb.org/project/contribute/" target="_blank">Contribute page</a>.'
+
   # Contact section
   [params.contact]
     enable = true
@@ -291,6 +307,10 @@ disableHugoGeneratorInject = true
     [[params.footer.info_links]]
       url = "https://docs.libreweb.org/faq"
       name = "FAQ"
+
+    [[params.footer.info_links]]
+      url = "https://docs.libreweb.org/project/contribute/"
+      name = "Contribute"
 
 # Blog still todo
 #    [[params.footer.info_links]]

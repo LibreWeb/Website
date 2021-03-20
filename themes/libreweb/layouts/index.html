@@ -34,6 +34,10 @@
         	{{ partial "counters.html" .}}
         {{ end }}
 
+		{{ if .Site.Params.help.enable }}
+        	{{ partial "help.html" .}}
+        {{ end }}
+
 		{{ if .Site.Params.contact.enable }}
         	{{ partial "contact.html" .}}
         {{ end }}
