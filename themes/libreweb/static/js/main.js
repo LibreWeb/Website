@@ -132,11 +132,11 @@
         if (location.search.substring(1) !== '') {
             switch (location.search.substring(1)) {
                 case 'submitted':
-                    $('.contact-submitted').removeClass('hidden');
+                    $('.contact-submitted').removeClass('d-none');
                     break;
 
                 case 'error':
-                    $('.contact-error').removeClass('hidden');
+                    $('.contact-error').removeClass('d-none');
                     break;
             }
         }
