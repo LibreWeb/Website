@@ -26,7 +26,7 @@
 
     // Page Nav
     var clickMenu = function () {
-        $('#navbar a:not([class="external"])').click(function (event) {
+        $('#navbar a:not([class="nav-link external"])').click(function (event) {
             var section = $(this).data('nav-section'),
                 navbar = $('#navbar');
             if ($('[data-section="' + section + '"]').length) {
@@ -46,7 +46,7 @@
 
     // Make button links work in home
     var buttonLinks = function () {
-        $('#home a:not([class="external"])').click(function (event) {
+        $('#home a:not([class="nav-link external"])').click(function (event) {
             var section = $(this).data('nav-section');
             if ($('[data-section="' + section + '"]').length) {
                 $('html, body').animate({
