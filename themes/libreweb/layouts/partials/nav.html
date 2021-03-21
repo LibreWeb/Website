@@ -10,42 +10,42 @@
                         alt="{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}" /></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav ml-auto">
 
                     {{ range .Site.Menus.prepend }}
-                    <li><a class="external" href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
+                    <li class="nav-item">><a class="nav-link external" href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
                     {{ end }}
 
-                    <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home
+                    <li class="nav-item active"><a class="nav-link" href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home
                                 }}{{ . | markdownify }}{{ end }}</span></a></li>
 
                     {{ if .Site.Params.testimonials.enable }}
-                    <li><a href="#" data-nav-section="testimonials"><span>{{ with .Site.Params.navigation.testimonials
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav-section="testimonials"><span>{{ with .Site.Params.navigation.testimonials
                                 }}{{ . | markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.features.enable }}
-                    <li><a href="#" data-nav-section="features"><span>{{ with .Site.Params.navigation.features }}{{ . |
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav-section="features"><span>{{ with .Site.Params.navigation.features }}{{ . |
                                 markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.about.enable }}
-                    <li><a href="#" data-nav-section="about"><span>{{ with .Site.Params.navigation.about }}{{ . |
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav-section="about"><span>{{ with .Site.Params.navigation.about }}{{ . |
                                 markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.help.enable }}
-                    <li><a href="#" data-nav-section="help"><span>{{ with .Site.Params.navigation.help }}{{ . |
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav-section="help"><span>{{ with .Site.Params.navigation.help }}{{ . |
                                 markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.contact.enable }}
-                    <li><a href="#" data-nav-section="contact"><span>{{ with .Site.Params.navigation.contact }}{{ . |
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav-section="contact"><span>{{ with .Site.Params.navigation.contact }}{{ . |
                                 markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ range .Site.Menus.postpend }}
-                    <li><a class="external" href="{{ .URL }}" target="_blank"><span>{{ .Name | markdownify }} <i
+                    <li class="nav-item"><a class="nav-link external" href="{{ .URL }}" target="_blank"><span>{{ .Name | markdownify }} <i
                                     class="fa fa-external-link" style="font-size: 1.2rem; vertical-align:top"
                                     aria-hidden="true"></i></span></a></li>
                     {{ end }}
