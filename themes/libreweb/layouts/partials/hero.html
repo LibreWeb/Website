@@ -8,10 +8,9 @@
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
-						<div id="home" class="col col-md-8 offset-2">
+						<div id="home" class="col col-md-12">
 							<h1>{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
 							<h2>{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
-
                             <p>
                                 <a href="https://gitlab.melroy.org/libreweb/browser/-/releases" target="_blank" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i> Download</a>  
                                 <a href="#" data-nav-section="features" class="btn btn-secondary">Why LibreWeb?</a>
