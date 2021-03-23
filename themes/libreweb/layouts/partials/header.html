@@ -23,13 +23,14 @@
     <link rel="preload" href="css/fork-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="preload" href="css/simple-line-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="preload" href="css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <noscript>
         <link rel="stylesheet" href="css/fork-awesome.css" />
         <link rel="stylesheet" href="css/simple-line-icons.css" />
         <link rel="stylesheet" href="css/magnific-popup.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </noscript>
     {{ range .Site.Params.custom_css }}<link rel="stylesheet" href="{{ . }}" />{{ end }}
     <script src="js/modernizr.js"></script>
