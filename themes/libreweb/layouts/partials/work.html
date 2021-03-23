@@ -1,10 +1,10 @@
 	<section id="fh5co-work" data-section="work">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 section-heading text-center">
+				<div class="col col-md-12 section-heading text-center">
 					<h2>{{ with .Site.Params.work.title }}{{ . }}{{ end }}</h2>
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext">
+						<div class="col-md-8 offset-2 subtext">
 							<h3>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 						</div>
 					</div>
@@ -12,9 +12,9 @@
 			</div>
 			<div class="row row-bottom-padded-sm">
 			{{ range .Site.Params.work.row }}
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col col-md-4 col-sm-6 col-xxs-12">
 					<a href="images/{{ .img }}" class="fh5co-project-item image-popup ">
-						<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
+						<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-fluid">
 						<div class="fh5co-text">
 						<h2>{{ .title }}</h2>
 						<span>{{ .subtitle }}</span>
@@ -22,11 +22,11 @@
 					</a>
 				</div>				
 
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix d-none d-sm-block d-md-none"></div>
 			{{ end }}
 			</div>
 			<div class="row">
-				<div class="col-md-12 text-center ">
+				<div class="col col-md-12 text-center ">
 					<p>{{ .Site.Params.work.footertext | markdownify }}</p>
 				</div>
 			</div>

@@ -2,13 +2,13 @@
 		<div class="fh5co-overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 section-heading text-center ">
+				<div class="col col-md-12 section-heading text-center ">
 					<h2>{{ .Site.Params.counters.title | markdownify }}</h2>
 				</div>
 			</div>
 			<div class="row">
 			{{ range .Site.Params.counters.item }}
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="col col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter">
 						<i class="fh5co-counter-icon fa {{ .icon }}" aria-hidden="true"></i>
 						<span class="fh5co-counter-number js-counter" data-from="{{ .from }}" data-to="{{ .to }}" data-speed="{{ .speed }}" data-refresh-interval="{{ .interval }}">{{ .to }}</span>
