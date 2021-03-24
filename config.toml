@@ -283,6 +283,7 @@ disableHugoGeneratorInject = true
         ["fa-matrix-org", "https://matrix.to/#/#libreweb:melroy.org?via=melroy.org"],
         ["fa-twitter", "https://twitter.com/LibreWebOrg"],
         ["fa-facebook", "https://www.facebook.com/LibreWeb.org"],
+        ["fa-linkedin", "https://www.linkedin.com/company/libreweb"],
         ["fa-reddit", "https://www.reddit.com/r/libreweb"],
         ["fa-youtube", "https://www.youtube.com/channel/UC1wZpYca2iu4pJ3bhZ3azcw"]
       ]
