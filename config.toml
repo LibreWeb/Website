@@ -15,8 +15,8 @@ disableHugoGeneratorInject = true
 
   # Meta
   author = "Melroy van den Berg"
-  description = "LibreWeb Browser - Decentralized Internet alternative. LibreWeb uses IPFS."
-  keywords = "LibreWeb, browser, decentralized, WWW, IPFS"
+  description = "LibreWeb Browser - Decentralized Internet alternative, using IPFS."
+  keywords = "LibreWeb, browser, decentralized, IPFS, content, markdown, web, WWW, publish, docs"
   email = ""
 
   # Navigation
@@ -51,7 +51,7 @@ disableHugoGeneratorInject = true
   # Hero section
   [params.hero]
     title = "LibreWeb Browser"
-    subtitle = 'Decentralized Web Browser, using IPFS.'
+    subtitle = 'Decentralized Web Browser, build on top of <a href="https://ipfs.io/" target="_blank">IPFS</a>.'
  
   # Intro section
   # Available icons: http://simplelineicons.com/
