@@ -178,7 +178,7 @@ disableHugoGeneratorInject = true
 
     [[params.features.item]]
       title = "Open-Source"
-      description = "Fully open-source, free software and licensed under MIT license."
+      description = "Fully open-source, <b>free software</b> and licensed under MIT license."
       icon = "fa-microphone"
 
   # About section
