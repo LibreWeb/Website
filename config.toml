@@ -16,7 +16,7 @@ disableHugoGeneratorInject = true
   # Meta
   author = "Melroy van den Berg"
   description = "LibreWeb Browser - Decentralized Internet alternative, using IPFS."
-  keywords = "LibreWeb, browser, decentralized, IPFS, content, markdown, web, WWW, publish, docs"
+  keywords = "LibreWeb, browser, decentralized, IPFS, content, markdown, web, world wide web, WWW, publish, docs"
   email = ""
 
   # Navigation
@@ -160,7 +160,7 @@ disableHugoGeneratorInject = true
     title = "Main Features"
     description = "Why should you choose LibreWeb?"
 
-    # Decentralized, no blockchain, no single point of failure, fast, no censorship
+    # Feature list
     [[params.features.item]]
       title = "No Censorship"
       description = "Unable to censor by governments due to the decentralized nature.<br/>Also <b>no</b> telemetry, adware or tracking."
@@ -168,12 +168,12 @@ disableHugoGeneratorInject = true
 
     [[params.features.item]]
       title = "Decentralized"
-      description = 'Fully decentralized by using the <a target="_blank" href="https://ipfs.io/">InterPlanetary File System (IPFS)</a> protocol. Meaning no single-point-of-failure, content gets distributed across nodes.<br/>All the benefits of IPFS and more.'
+      description = 'Fully decentralized by using the <a target="_blank" href="https://ipfs.io/">InterPlanetary File System (IPFS)</a> protocol. Meaning no single-point-of-failure, reliably, content gets distributed across nodes.<br/>All the benefits of IPFS and more.'
       icon = "fa-hubzilla"
 
     [[params.features.item]]
       title = "Fast & Easy"
-      description = "Very fast Web Browser, using Markdown syntax as the source-code of the content. Allowing fast & secure rendering. Content is king."
+      description = "Fast Web browser and rendering, using Markdown syntax as the content source-code. Easy to build your own site <i>without</i> technical knowledge. Content is king."
       icon = "fa-clock-o"
 
     [[params.features.item]]
@@ -181,12 +181,22 @@ disableHugoGeneratorInject = true
       description = "Fully open-source, <b>free software</b> and licensed under MIT license."
       icon = "fa-microphone"
 
+    [[params.features.item]]
+      title = "Secure"
+      description = "Data is content-addressed and searchable via your public key (signed by your private key)."
+      icon = "fa-shield"
+
+    [[params.features.item]]
+      title = "Anonymous"
+      description = "Surf anonymously on the decentralized web, the way the WWW was intended. No javascript, no tracking, no cookies."
+      icon = "fa-question"
+
   # About section
   [params.about]
     enable = true
     title = "About"
     contributors = "Contributors"
-    description = "Today the Internet is centralized and controlled by big businesses, companies and even the government has control of the Internet. With LibreWeb that is about to change.\n\nThe goal of LibreWeb is to have a decentralized Internet, free & open-source, without a single-point-of-failure and no censorship."
+    description = 'Todays Internet is centralized and controlled by big (tech) businesses, companies and even the government has control of the Internet. With LibreWeb that is about to change.<br/><br/>The goal of LibreWeb is to have a decentralized Internet, free & open-source, without a single-point-of-failure and no censorship.<br/><br/><a href="https://docs.libreweb.org/concepts/" target="_blank">Read the basic concepts <i class="fa fa-external-link" style="font-size: 1.2rem; vertical-align: middle" aria-hidden="true"></i></a>'
 
     [[params.about.item]]
       name = "Melroy van den Berg"
