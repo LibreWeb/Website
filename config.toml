@@ -51,7 +51,7 @@ disableHugoGeneratorInject = true
   # Hero section
   [params.hero]
     title = "LibreWeb Browser"
-    subtitle = 'Decentralized Web Browser, build on top of <a href="https://ipfs.io/" target="_blank">IPFS</a>.'
+    subtitle = 'Decentralized Web Browser, built on top of <a href="https://ipfs.io/" target="_blank">IPFS</a>.'
  
   # Intro section
   # Available icons: http://simplelineicons.com/
@@ -173,7 +173,7 @@ disableHugoGeneratorInject = true
 
     [[params.features.item]]
       title = "Fast & Easy"
-      description = "Fast Web browser and rendering, using Markdown syntax as the content source-code. Easy to build your own site <i>without</i> technical knowledge. Content is king."
+      description = "Fast Web browser and rendering, using Markdown syntax as the content source-code. Easy to build your own site <i>without</i> technical knowledge requirements. Content is king."
       icon = "fa-clock-o"
 
     [[params.features.item]]
