@@ -51,7 +51,7 @@ disableHugoGeneratorInject = true
   # Hero section
   [params.hero]
     title = "LibreWeb Browser"
-    subtitle = 'Decentralized Web Browser, built on top of <a href="https://ipfs.io/" target="_blank">IPFS</a>.'
+    subtitle = 'Decentralized Web Browser built on top of <a href="https://ipfs.io/" target="_blank">IPFS</a>'
  
   # Intro section
   # Available icons: http://simplelineicons.com/
@@ -162,23 +162,23 @@ disableHugoGeneratorInject = true
 
     # Feature list
     [[params.features.item]]
-      title = "No Censorship"
-      description = "Unable to censor by governments due to the decentralized nature.<br/>Also <b>no</b> telemetry, adware or tracking."
-      icon = "fa-eye-slash"
-
-    [[params.features.item]]
       title = "Decentralized"
-      description = 'Fully decentralized by using the <a target="_blank" href="https://ipfs.io/">InterPlanetary File System (IPFS)</a> protocol. Meaning no single-point-of-failure, reliably, content gets distributed across nodes.<br/>All the benefits of IPFS and more.'
+      description = 'The <a target="_blank" href="https://ipfs.io/">InterPlanetary File System (IPFS)</a> protocol ensures that content is distributed across nodes and delivered reliably with no potential single-point-of-failure. LibreWeb capitalizes on all the benefits of IPFS and then some.'
       icon = "fa-hubzilla"
 
     [[params.features.item]]
+      title = "No Censorship"
+      description = "Neither governments nor corporations can censor or block content due LibreWeb's decentralized nature."
+      icon = "fa-eye-slash"
+
+    [[params.features.item]]
       title = "Fast & Easy"
-      description = "Fast Web browser and rendering, using Markdown syntax as the content source-code. Easy to build your own site <i>without</i> technical knowledge requirements. Content is king."
+      description = "LibreWeb Browser renders content fast, using easy Markdown syntax as source-code. <b>Anyone</b> can easily build a website <b>without</b> <b><i>any</i></b> technical skills using LibreWeb's built-in, familiar, user-friendly content editor and Markdown. With LibreWeb Browser, content is King."
       icon = "fa-clock-o"
 
     [[params.features.item]]
       title = "Open-Source"
-      description = "Fully open-source, <b>free software</b> and licensed under MIT license."
+      description = "LibreWeb Browser is fully open-source, <b>free software</b> licensed under the MIT license."
       icon = "fa-microphone"
 
     [[params.features.item]]
@@ -188,7 +188,7 @@ disableHugoGeneratorInject = true
 
     [[params.features.item]]
       title = "Anonymous"
-      description = "Surf anonymously on the decentralized web, the way the WWW was intended. No javascript, no tracking, no cookies."
+      description = "Surf anonymously on the decentralized web, the way the WWW was intended. There's no javascript, no tracking, no cookies, no telemetry, no adware."
       icon = "fa-question"
 
   # About section
@@ -196,12 +196,12 @@ disableHugoGeneratorInject = true
     enable = true
     title = "About"
     contributors = "Contributors"
-    description = 'Todays Internet is centralized and controlled by big (tech) businesses, companies and even the government has control of the Internet. With LibreWeb that is about to change.<br/><br/>The goal of LibreWeb is to have a decentralized Internet, free & open-source, without a single-point-of-failure and no censorship.<br/><br/><a href="https://docs.libreweb.org/concepts/" target="_blank">Read the basic concepts <i class="fa fa-external-link" style="font-size: 1.2rem; vertical-align: middle" aria-hidden="true"></i></a>'
+    description = 'Todays Internet is centralized and controlled by big (tech) businesses and corporations. Even governments have controls over the Internet. With LibreWeb that will change.<br/><br/>The goal of LibreWeb is to have a fully-free & open-source, decentralized Internet - with <b>no</b> potential single-point-of-failure and <b>no</b> censorship.<br/><br/><a href="https://docs.libreweb.org/concepts/" target="_blank">Read the basic concepts <i class="fa fa-external-link" style="font-size: 1.2rem; vertical-align: middle" aria-hidden="true"></i></a>'
 
     [[params.about.item]]
       name = "Melroy van den Berg"
       position = "Creator/Founder"
-      description = "I got inspired to create a decentralized web.\n\nLibreWeb Browser is an answer to a world which gets more and more centralized, monetized and censored by companies (big tech) and governments."
+      description = "I became inspired to create a decentralized web.\n\nLibreWeb Browser effectively counters a world that is becoming increasingly centralized, monetized and censored by big-tech corporations and governments."
       img = "melroy.jpg"
       alt = "Melroy van den Berg"
       social = [
@@ -253,25 +253,25 @@ disableHugoGeneratorInject = true
   [params.help]
     enable = true
     title = "Getting help"
-    description = "If you are looking for help or support,<br/>here is a list to help you get started:"
+    description = "If you are looking for help or support,<br/>here is a list to get you started:"
 
     [[params.help.items]]
-      content = '<b>Documentation:</b> Clear and dedicated <a href="https://docs.libreweb.org" target="_blank">documentation site</a> about the project, FAQ and more.'
+      content = '<b>Documentation:</b> Find out more about the LibreWeb project, answers to your FAQs, How-Tos and ways to connect with the LibreWeb community at the <a href="https://docs.libreweb.org" target="_blank">LibreWeb Documentation</a> web site.'
     #[[params.help.items]]
     #  content = '<b>Technical support:</b> Reach out to our official LibreWeb forums.'
     [[params.help.items]]
-      content = '<b>General questions & discussions:</b> Use <a href="https://matrix.to/#/#libreweb:melroy.org?via=melroy.org" target="_blank">Matrix</a> or <a href="https://t.me/libreweb" target="_blank">Telegram</a>.'
+      content = '<b>General Questions & Discussions:</b> Use <a href="https://matrix.to/#/#libreweb:melroy.org?via=melroy.org" target="_blank">Matrix</a> or <a href="https://t.me/libreweb" target="_blank">Telegram</a>.'
     [[params.help.items]]
-      content = '<b>Bugs and feature proposals:</b> Submit an issue on the <a href="https://gitlab.melroy.org/libreweb/browser/-/issues" target="_blank">GitLab LibreWeb Browser</a> repository.'
+      content = '<b>Bugs & Feature Requests:</b> <a href="https://gitlab.melroy.org/libreweb/browser/-/issues" target="_blank">Submit an issue</a> on the LibreWeb Browser GitLab repository.'
     [[params.help.items]]
-      content = '<b>Contribute:</b> Do you like to contribute? Read the <a href="https://docs.libreweb.org/project/contribute/" target="_blank">Contribute page</a>.'
+      content = '<b>Contribute:</b> Do you like to contribute? There are several different ways you can speed up the coming of a truly free and decentralized Internet! Check out the <a href="https://docs.libreweb.org/project/contribute/" target="_blank">Contribute</a> page to find out more.'
 
   # Contact section
   [params.contact]
     enable = true
     form = true
     title = "Get in touch"
-    description = 'Join us on <a href="https://t.me/libreweb" target="_blank">Telegram</a> or <a href="https://matrix.to/#/#libreweb:melroy.org?via=melroy.org" target="_blank">Matrix</a>. Send an <a id="mailto">e-mail</a>, or just fill-in the contact form below.'
+    description = 'Join us on <a href="https://t.me/libreweb" target="_blank">Telegram</a> or <a href="https://matrix.to/#/#libreweb:melroy.org?via=melroy.org" target="_blank">Matrix</a>. Send an <a id="mailto">e-mail</a>, or just fill out the contact form below.'
  
     name = "Your name"
     email = "your@mail.com"
@@ -279,8 +279,8 @@ disableHugoGeneratorInject = true
     message = "Message"
     button = "Send message"
     
-    successful = "Thank you! Form is successfully send, if needed we will reply as soon as possible."
-    error = "Something went wrong during submitting the form."
+    successful = "Thank you! Your message has been sent. We will contact you as soon as possible if needed."
+    error = "Something went wrong during the submission of your message."
 
   # Footer section
   [params.footer]
