@@ -279,7 +279,7 @@ disableHugoGeneratorInject = true
     message = "Message"
     button = "Send message"
     
-    successful = "Thank you! Your message has been sent. We will contact you as soon as possible if needed."
+    successful = "Thank you! Your message has been successfully sent. We will contact you as soon as possible if needed."
     error = "Something went wrong during the submission of your message."
 
   # Footer section
