@@ -3,8 +3,9 @@
 			<div class="row">
 				<div class="col col-md-12 section-heading text-center">
 					<h2 class="">{{ with .Site.Params.contact.title }}{{ . | markdownify }}{{ end }}</h2>
-					{{ with .Site.Params.contact.description }}<div class="row">
-                    <div class="col col-md-8 offset-2 subtext">
+					{{ with .Site.Params.contact.description }}
+					<div class="row">
+						<div class="col col-md-8 offset-2 subtext">
 							<h3>{{ . | markdownify }}</h3>
 						</div>
 					</div>
@@ -14,7 +15,6 @@
 			<div class="row row-bottom-padded-md">
 				{{ if .Site.Params.contact.form }}
 				<div class="col col-md-12 ">
-					
 					{{ with .Site.Params.contact.successful }}<p class="contact-submitted alert alert-success d-none">{{ . | markdownify }}</p>{{ end }}
 					{{ with .Site.Params.contact.error }}<p class="contact-error alert alert-danger d-none">{{ . | markdownify }}</p>{{ end }}
 
