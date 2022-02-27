@@ -356,7 +356,7 @@ disableHugoGeneratorInject = true
 #      name = "Blog"
 
     [[params.footer.info_links]]
-      url = "https://docs.libreweb.org/project/#supporters"
+      url = "https://docs.libreweb.org/project/sponsor/"
       name = "Sponsor"
 
     [[params.footer.info_links]]
