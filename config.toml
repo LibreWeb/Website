@@ -277,10 +277,10 @@ disableHugoGeneratorInject = true
       interval = 50
       speed = 5000
 
-  # Help section
+  # Help / contribute section
   [params.help]
     enable = true
-    title = "Getting help"
+    title = 'Help &amp; Contribute'
     description = "If you are looking for help or support,<br/>here is a list to get you started:"
 
     [[params.help.items]]
