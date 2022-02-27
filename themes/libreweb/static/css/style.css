@@ -653,20 +653,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-#fh5co-features, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-help, #fh5co-contact, #fh5co-about {
+#fh5co-features, #fh5co-testimonials, #fh5co-counters, #fh5co-supporters, #fh5co-work, #fh5co-help, #fh5co-contact, #fh5co-about {
   padding: 4em 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-features, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-help, #fh5co-contact, #fh5co-about {
+  #fh5co-features, #fh5co-testimonials, #fh5co-counters, #fh5co-supporters, #fh5co-work, #fh5co-help, #fh5co-contact, #fh5co-about {
     padding: 2em 0;
   }
 }
 
-#fh5co-features, #fh5co-work, #fh5co-help, #fh5co-counters {
+#fh5co-features, #fh5co-work, #fh5co-help, #fh5co-counters, #fh5co-supporters {
   padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-features, #fh5co-work, #fh5co-help, #fh5co-counters {
+  #fh5co-features, #fh5co-work, #fh5co-help, #fh5co-counters, #fh5co-supporters {
     padding: 4em 0;
   }
 }
@@ -737,6 +737,118 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-features a {
     color: #fff;
+}
+
+#fh5co-supporters {
+  background-color: #217a30;
+  /* IE9, iOS 3.2+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #48b63a), color-stop(1, #32ac79));
+  /* Android 2.3 */
+  /*background-image: -webkit-repeating-linear-gradient(top left, #27c262 0%, #52d3aa 100%);*/
+  /* IE10+ */
+  /*background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);*/
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 9em 0 8em 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-supporters {
+    padding: 4em 0;
+  }
+}
+#fh5co-supporters .fh5co-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(3, 24, 1, 0.4);
+}
+#fh5co-supporters:before, #fh5co-supporters:after {
+  position: absolute;
+  transform: rotate(-1.7deg);
+  -ms-transform: rotate(-1.7deg);
+  -webkit-transform: rotate(-1.7deg);
+  -o-transform: rotate(-1.7deg);
+  -moz-transform: rotate(-1.7deg);
+  background-color: #fff;
+  content: "";
+  z-index: 3;
+  display: inline-block;
+  height: 70px;
+  padding: 0;
+  width: 101%;
+}
+#fh5co-supporters:before {
+  top: 0;
+  margin-top: -35px;
+}
+#fh5co-supporters:after {
+  bottom: 0;
+  margin-bottom: -35px;
+}
+#fh5co-supporters .section-heading {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 0;
+}
+#fh5co-supporters .section-heading h2 {
+  color: #fff;
+}
+#fh5co-supporters .section-heading h2:after {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+#fh5co-supporters .section-heading .subtext h3 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#fh5co-supporters .fh5co-supporting {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-supporters .fh5co-supporting {
+    margin-bottom: 50px;
+    float: left;
+    width: 100%;
+  }
+}
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-icon,
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-description,
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-title {
+  display: block;
+}
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-icon {
+  font-size: 60px;
+}
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-title {
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+}
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-title a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-title a:hover, #fh5co-supporters .fh5co-supporting .fh5co-supporting-title a:focus, #fh5co-supporters .fh5co-supporting .fh5co-supporting-title a:active {
+  color: rgb(13, 59, 90);
+}
+#fh5co-supporters .fh5co-supporting a {
+  color: #7ecdf1;
+}
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-description a:hover, #fh5co-supporters .fh5co-supporting .fh5co-supporting-description a:focus, #fh5co-supporters .fh5co-supporting .fh5co-supporting-description a:active {
+  color: #3f97df;
+}
+#fh5co-supporters .fh5co-supporting .fh5co-supporting-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-weight: 400;
 }
 
 #fh5co-counters {

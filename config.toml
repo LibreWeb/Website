@@ -10,7 +10,7 @@ disableHugoGeneratorInject = true
     [markup.goldmark.renderer]
       unsafe = true
 
-[params]  
+[params]
   #custom_css = ["css/custom1.css", "css/custom2.css"]
 
   # Meta
@@ -25,6 +25,7 @@ disableHugoGeneratorInject = true
     home = "Home"
     features = "Features"
     about = "About"
+    supporters = "Supporters"
     help = "Help"
     contact = "Contact"
 
@@ -210,6 +211,33 @@ disableHugoGeneratorInject = true
         ["fa-matrix-org", "https://matrix.to/#/#libreweb:melroy.org?via=melroy.org"],
         ["fa-twitter", "https://twitter.com/LibreWebOrg"]
       ]
+
+  # Support section  
+  [params.supporters]
+    enable = true
+    title = "Supporters"
+    description ="We are truly grateful to all the wonderful humans and companies supporting the LibreWeb project.\n\nHelp accelerate the development and become a supporter yourself!"
+
+    [[params.supporting.item]]
+      icon = "fa-btc"
+      iconColor = "#e2c233"
+      title = "Crypto"
+      description = "Donate crypto currencies. Bitcoin: <code>bc1q3kc8nh2he7jyy6hum4dr84dhaajy5nex30wm7q</code>"
+
+    [[params.supporting.item]]
+      icon = "fa-heart"
+      iconColor = "#d35252"
+      title = "GitHub Sponsors"
+      description = 'Sponsor me using <a target="_blank" href="https://github.com/sponsors/danger89/">GitHub Sponsors</a>'
+      link = "https://github.com/sponsors/danger89/"
+
+    [[params.supporting.item]]
+      icon = "fa-credit-card"
+      iconColor = "#ca347a"
+      title = "BackMe"
+      description = 'Support the project on <a target="_blank" href="https://libreweb.backme.org">libreweb.backme.org</a>'
+      link = "https://libreweb.backme.org"
+
 
   # Counters section
   [params.counters]

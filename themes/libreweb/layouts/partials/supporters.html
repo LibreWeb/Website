@@ -1,0 +1,26 @@
+	<section id="fh5co-supporters" data-section="supporters">
+		<div class="fh5co-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col col-md-12 section-heading text-center">
+					<h2>{{ .Site.Params.supporters.title | markdownify }}</h2>
+					<div class="row">
+						<div class="col-md-8 offset-2 subtext">
+							<h3>{{ with .Site.Params.supporters.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			{{ range .Site.Params.supporting.item }}
+				<div class="col col-md-4 col-sm-6 col-xs-12">
+					<div class="fh5co-supporting">
+						{{ if .link }}<a target="_blank" href="{{ .link }}" style="text-decoration: none">{{ end }}<i class="fh5co-supporting-icon fa {{ .icon }}" style="color: {{ .iconColor }};" aria-hdden="true"></i>{{ if .link }}</a>{{ end }}
+						<span class="fh5co-supporting-title">{{ if .link }}<a target="_blank" href="{{ .link }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</span>
+						<span class="fh5co-supporting-description">{{ .description | markdownify }}</span>
+					</div>
+				</div>
+			{{ end }}
+			</div>
+		</div>
+	</section>

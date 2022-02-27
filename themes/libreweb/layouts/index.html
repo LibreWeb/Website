@@ -4,48 +4,52 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html{{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }}>
-    <head>
-        {{ partial "header.html" .}}
-    </head>
-    <body>
-        {{ partial "nav.html" .}}
+	<head>
+		{{ partial "header.html" .}}
+	</head>
+	<body>
+		{{ partial "nav.html" .}}
 
 		{{ partial "hero.html" .}}
 		
-        <!-- {{ partial "intro.html" .}} -->
+		<!-- {{ partial "intro.html" .}} -->
 
 		{{ if .Site.Params.work.enable }}
-       		{{ partial "work.html" .}}
-       	{{ end }}
+			{{ partial "work.html" .}}
+		{{ end }}
 
 		{{ if .Site.Params.testimonials.enable }}
-        	{{ partial "testimonials.html" .}}
+			{{ partial "testimonials.html" .}}
 		{{ end }}
 
 		{{ if .Site.Params.features.enable }}
-        	{{ partial "features.html" .}}
+			{{ partial "features.html" .}}
 		{{ end }}
 
 		{{ if .Site.Params.about.enable }}
-        	{{ partial "about.html" .}}
+			{{ partial "about.html" .}}
+		{{ end }}
+
+		{{ if .Site.Params.supporters.enable }}
+			{{ partial "supporters.html" .}}
 		{{ end }}
 
 		{{ if .Site.Params.counters.enable }}
-        	{{ partial "counters.html" .}}
-        {{ end }}
+			{{ partial "counters.html" .}}
+		{{ end }}
 
 		{{ if .Site.Params.help.enable }}
-        	{{ partial "help.html" .}}
-        {{ end }}
+			{{ partial "help.html" .}}
+		{{ end }}
 
 		{{ if .Site.Params.contact.enable }}
-        	{{ partial "contact.html" .}}
-        {{ end }}
+			{{ partial "contact.html" .}}
+		{{ end }}
 
-        {{ if .Site.Params.footer.enable }}
-        	{{ partial "footer.html" .}}
-        {{ end }}
+		{{ if .Site.Params.footer.enable }}
+			{{ partial "footer.html" .}}
+		{{ end }}
 
-        {{ partial "js.html" .}}
-    </body>
+		{{ partial "js.html" .}}
+	</body>
 </html>

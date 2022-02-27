@@ -27,6 +27,10 @@
                     {{ if .Site.Params.about.enable }}
                     <li class="nav-item"><a class="nav-link" href="#" data-nav-section="about"><span>{{ with .Site.Params.navigation.about }}{{ . | markdownify }}{{ end }}</span></a></li>
                     {{ end }}
+                    
+                    {{ if .Site.Params.supporters.enable }}
+                    <li class="nav-item"><a class="nav-link" href="#" data-nav-section="supporters"><span>{{ with .Site.Params.navigation.supporters }}{{ . | markdownify }}{{ end }}</span></a></li>
+                    {{ end }}
 
                     {{ if .Site.Params.help.enable }}
                     <li class="nav-item"><a class="nav-link" href="#" data-nav-section="help"><span>{{ with .Site.Params.navigation.help }}{{ . | markdownify }}{{ end }}</span></a></li>
