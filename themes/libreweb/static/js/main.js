@@ -14,6 +14,13 @@
 
     };
 
+    var clickLinkItem = function () {
+        // Hide menu when link is clicked
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+    };
+
     var goToTop = function () {
         $('.js-gotop').on('click', function (event) {
             event.preventDefault();
@@ -41,6 +48,17 @@
             }
             event.preventDefault();
             return false;
+        });
+
+        // Also remove 'active' showing the burger icon in case of an external link
+        $('#navbar a[class="nav-link external"]').click(function () {
+            var navbar = $('#navbar');
+            if (navbar.is(':visible')) {
+                navbar.removeClass('in');
+                navbar.attr('aria-expanded', 'false');
+                $('.js-fh5co-nav-toggle').removeClass('active');
+            }
+            return true;
         });
     };
 
@@ -185,6 +203,7 @@
     // Document on load.
     $(function () {
         burgerMenu();
+        clickLinkItem();
         clickMenu();
         buttonLinks();
         windowScroll();
