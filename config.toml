@@ -168,7 +168,7 @@ disableHugoGeneratorInject = true
       icon = "fa-hubzilla"
 
     [[params.features.item]]
-      title = "No Censorship"
+      title = "Censorship Resistant"
       description = "Neither governments nor corporations can censor or block content due LibreWeb's decentralized nature."
       icon = "fa-eye-slash"
 
