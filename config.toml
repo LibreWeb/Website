@@ -222,7 +222,7 @@ disableHugoGeneratorInject = true
       icon = "fa-btc"
       iconColor = "#e2c233"
       title = "Crypto"
-      description = "Donate crypto currencies.\n\n -Bitcoin (BTC): <code>bc1q3kc8nh2he7jyy6hum4dr84dhaajy5nex30wm7q</code>\n -Bitcoin Cash (BCH): <code>bitcoincash:qry3u35ggd43pqk364waqlnlg8mnxdckus7vlexerw</code>"
+      description = "Donate crypto currencies.\n- Bitcoin (BTC): <code>bc1q3kc8nh2he7jyy6hum4dr84dhaajy5nex30wm7q</code>\n- Bitcoin Cash (BCH): <code>bitcoincash:qry3u35ggd43pqk364waqlnlg8mnxdckus7vlexerw</code>"
 
     [[params.supporting.item]]
       icon = "fa-heart"
