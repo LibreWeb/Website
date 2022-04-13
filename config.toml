@@ -220,20 +220,20 @@ disableHugoGeneratorInject = true
 
     [[params.supporting.item]]
       icon = "fa-btc"
-      iconColor = "#e2c233"
+      iconColor = "#e8c31e"
       title = "Crypto"
       description = "Donate crypto currencies.\n- Bitcoin (BTC): <code>bc1q3kc8nh2he7jyy6hum4dr84dhaajy5nex30wm7q</code>\n- Bitcoin Cash (BCH): <code>bitcoincash:qry3u35ggd43pqk364waqlnlg8mnxdckus7vlexerw</code>"
 
     [[params.supporting.item]]
       icon = "fa-heart"
-      iconColor = "#d35252"
+      iconColor = "#cf2727"
       title = "GitHub Sponsors"
       description = 'Sponsor me using <a target="_blank" href="https://github.com/sponsors/danger89/">GitHub Sponsors</a>'
       link = "https://github.com/sponsors/danger89/"
 
     [[params.supporting.item]]
       icon = "fa-credit-card"
-      iconColor = "#ca347a"
+      iconColor = "#1bb9e0"
       title = "BackMe"
       description = 'Support the project on <a target="_blank" href="https://libreweb.backme.org">libreweb.backme.org</a>'
       link = "https://libreweb.backme.org"

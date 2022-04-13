@@ -740,14 +740,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-supporters {
-  background-color: #217a30;
-  /* IE9, iOS 3.2+ */
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #48b63a), color-stop(1, #32ac79));
-  /* Android 2.3 */
-  /*background-image: -webkit-repeating-linear-gradient(top left, #27c262 0%, #52d3aa 100%);*/
-  /* IE10+ */
-  /*background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);*/
+  background-color: #14855a;
+  background-image: url("/images/tile_dark.png");
+  background-repeat: repeat;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -802,7 +797,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.3) !important;
 }
 #fh5co-supporters .section-heading .subtext h3 {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 #fh5co-supporters .fh5co-supporting {
@@ -840,13 +835,13 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(13, 59, 90);
 }
 #fh5co-supporters .fh5co-supporting a {
-  color: #7ecdf1;
+  color: #fac45e;
 }
 #fh5co-supporters .fh5co-supporting .fh5co-supporting-description a:hover, #fh5co-supporters .fh5co-supporting .fh5co-supporting-description a:focus, #fh5co-supporters .fh5co-supporting .fh5co-supporting-description a:active {
-  color: #3f97df;
+  color: rgb(180, 137, 57);
 }
 #fh5co-supporters .fh5co-supporting .fh5co-supporting-description {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 18px;
   font-weight: 400;
 }
